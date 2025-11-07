@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<!-- kalkylator. Fungerar INTE som windows kalk (vilken uppdaterar fältet konstant vid knapptrycknar). Det här var inget planerat
+ utan det bara blev så och jag låter det vara eftersom den påminner om räknedosor man använder i högskolan, där man enkelt kan ångra inputs.
+ 
+ knappar 0-9 genereras via javascript forEach loop. Resten av knapparna är hårdkodade i html.
+ det finns egen div för nummerknappar, operationsknappar och clear.
+ Allt har vanilla class och js- class för olika åtkomst (osäker på vikten av detta, men det är något jag har lärt mig).
+ Alla divs har egna klasser för att kunna styla dem separat i css (position, centering på sida o.s.v.).
+ Alla knappar har egna klasser för noggrannare styling (och för js).
+
+ knapp 9 är intressant, den positioneras via id (ej klass) och genom grid-template-area (se calculator.css).
+
+ för operationsknapparna finns 1 yttre div och 1 inre div. tanken är att = ska ligga i en separat kollumn bredvid och vara större.
+ yttre div innerhåller alltså inre div (som innehållr operationsknapparna) samt = knappen.
+ Här blev det kollisioner mellan yttre och inre divs kollumner, det hade nog gått att lösa med smartare grids och kollumner,
+ men jag löste det genom att justera margins på = knappen och innre operations-div istället.
+
+ kalkylatorn opererar genom att lägga in knapparnas .textContent i inputfältet. Den behandlar egentligen text hela tiden,
+ både knapparna och resultatet behandlar strings, men det verkar lösas av sig själv via eval() funktionen.
+
+ dark theme button fungerar genom att lägga till och ta bort css klasser på body och knapparna.
+ alla dark-themes ligger efter de vanliga klasserna i css-filen, så de skriver över vid aktivering.
+ Detta måste kunna göras bättre, eftersom det är svårt/omöjligt att få precis allt i rätt ordning om dokumentet blir stort.
+
+ ATT GÖRA: MER FELHANTERING
+ -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" author="Christoffer Lukkarinen"
+    description="HTML projektuppgift tutorial showcase">
+  <title>Calculator</title>
+
+  <!-- Load a font called Roboto from Google Fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Here are the CSS files for this page. -->
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/calculator.css">
+</head>
+
+<body>
+  <a href="main.html">Home</a>
+  <button class="dark-theme-button js-dark-theme-button button">Switch to Dark Theme</button>
+  <br><br>
+  <div class="input-field-div js-input-field-div">
+    <input placeholder="enter number..." class="js-input-field input-field">
+  </div>
+
+  <div class="number-buttons-div js-number-buttons-div">
+  </div>
+
+  <div class="operation-buttons-outer-div js-operation-buttons-outer-div">
+    <div class="operation-buttons-div js-operation-buttons-div">
+      <button class="plus-button js-plus-button button">+</button>
+      <button class="minus-button js-minus-button button">-</button>
+      <button class="multiply-button js-multiply-button button">*</button>
+      <button class="divide-button js-divide-button button">/</button>
+
+    </div>
+    <button class="equals-button js-equals-button button">=</button>
+  </div>
+  <div class="clear-button-div js-clear-button-div">
+    <button class="clear-button js-clear-button button">Clear</button>
+    <button class="undo-button js-undo-button button">&lt;-</button>
+  </div>
+
+
+</body>
+<script src="scripts/calculator.js"></script>
+
+</html>
