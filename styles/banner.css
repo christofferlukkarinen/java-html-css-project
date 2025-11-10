@@ -1,0 +1,9 @@
+#banner-div {
+  top: 5;
+}
+
+.home-image {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+}
