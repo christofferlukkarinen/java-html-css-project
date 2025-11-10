@@ -1,0 +1,32 @@
+.sandboxButton1 {
+  width: 100px;
+  height: 100px;
+}
+
+.sandboxButton2 {
+  padding: 20px;
+}
+
+.sandboxButton3 {
+  border: 20px solid black;
+}
+
+.sandboxButton4 {
+  margin: 20px;
+}
+
+#sandbox-main-div {
+  text-align: center;
+}
+
+.sandbox-table {
+  margin: 10px auto 10px auto;
+}
+
+/* overflow::scroll; 
+box-shadow
+horizontal offset
+blur distance
+spread of shadow
+
+*/

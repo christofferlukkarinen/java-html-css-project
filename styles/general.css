@@ -1,3 +1,25 @@
+/*home-link exists as id in all subpages, the order matters here, if 'hover' is placed first,
+'visited' overwrites and hover won't show*/
+
+a:visited {
+  color: rgb(255, 0, 204)
+}
+
+a:hover {
+  color: rgb(255, 128, 0);
+  font-weight: bold;
+}
+
+#home-link:visited {
+  color: orange;
+}
+
+#home-link:hover {
+  color: rgb(25, 0, 255);
+  font-weight: bold;
+}
+
+
 body {
   font-family: Roboto, Arial;
   background-color: rgba(245, 234, 189, 0.333);

@@ -1,0 +1,14 @@
+ul {
+  width: 300px;
+  margin: 0px auto 0px auto;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px auto 20px auto;
+}
+
+li {
+  padding-bottom: 10px;
+}
