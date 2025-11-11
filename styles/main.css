@@ -12,3 +12,8 @@ h1 {
 li {
   padding-bottom: 10px;
 }
+
+body {
+  background: url(../media/banner.gif) no-repeat;
+  background-size: 100% 100%;
+}

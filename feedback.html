@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+This page is written mostly in pure html for practice
+-->
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" author="Christoffer Lukkarinen"
+    description="Feedback form">
+  <title>Feedback Form</title>
+
+  <!-- Load a font called Roboto from Google Fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Here are the CSS files for this page. -->
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/feedback.css">
+  <link rel="stylesheet" href="styles/banner.css">
+</head>
+
+<body>
+  <div id="banner-div"></div>
+  <center>
+    <h1>Feedback form for cool page</h1>
+    <p>Is this the first time you have visited this page?</p>
+    <input type="radio" id="visited-yes" name="visited" value="visited-yes" />
+    <label for="visited-yes">Yes</label>
+    <input type="radio" id="visited-no" name="visited" value="visited-no" />
+    <label for="visited-no">No</label>
+
+    <label for="reason-visiting">
+      <h2>What is your primary reason for visiting cool page?</h2>
+    </label>
+    <textarea id="reason-visiting" name="reason-visiting" rows="5" cols="30"></textarea>
+    <p>
+    <h3>Did you find what you needed?</h3>
+    </p>
+    <div id="find-needed-div">
+      <input type="radio" onclick="radioChecker()" id="find-needed-yes1" name="find-needed" value="find-needed-yes1" />
+      <label for="find-needed-yes1">Yes, more than I needed</label>
+      <input type="radio" onclick="radioChecker()" id="find-needed-yes2" name="find-needed" value="find-needed-yes2" />
+      <label for="find-needed-yes2">Yes, everything I needed</label>
+      <input type="radio" onclick="radioChecker()" id="find-needed-yes3" name="find-needed" value="find-needed-yes3"
+        checked />
+      <label for="find-needed-yes3">Yes, this page changed my life</label>
+    </div>
+
+    <p>
+    <h4>What could we improve on cool page?</h4>
+    <textarea style="resize: none;" id="improvements" name="improvements" rows="4" cols="20" disabled
+      resize:none>Absolutely Nothing is Improvable</textarea>
+    </p>
+
+    <table class="impression-table">
+      <caption>What is your overall impression of cool page?</caption>
+      <tr>
+        <th></th>
+        <th><b>Extremely Good</b></th>
+        <th><b>Perfect</b></th>
+        <th><b>Better than Perfect</b></th>
+        <th><b>Greatest design ever</b></th>
+      </tr>
+      <tr>
+        <td><i>Content Quality</i></td>
+        <td><input type="radio" name="content-quality"></td>
+        <td><input type="radio" name="content-quality"></td>
+        <td><input type="radio" name="content-quality"></td>
+        <td><input type="radio" name="content-quality"></td>
+
+      </tr>
+      <tr>
+        <td><i>Image Quality</i></td>
+        <td><input type="radio" name="image-quality"></td>
+        <td><input type="radio" name="image-quality"></td>
+        <td><input type="radio" name="image-quality"></td>
+        <td><input type="radio" name="image-quality"></td>
+      </tr>
+      <tr>
+        <td><i>Page Layout</i></td>
+        <td><input type="radio" name="layout-quality"></td>
+        <td><input type="radio" name="layout-quality"></td>
+        <td><input type="radio" name="layout-quality"></td>
+        <td><input type="radio" name="layout-quality"></td>
+      </tr>
+
+    </table>
+    <br><br>
+    <button style="
+    padding: 10px 30px;
+    ">Send</button>
+  </center>
+
+
+  <script src="scripts/banner.js"></script>
+  <script>
+    function radioChecker() {
+      const need1 = document.getElementById("find-needed-yes1").checked;
+      const need2 = document.getElementById("find-needed-yes2").checked;
+      if (need1 === true || need2 === true) {
+        alert("No Lies Allowed in this Feedback Form");
+        document.getElementById("find-needed-yes3").checked = true;
+      }
+
+    }
+  </script>
+</body>
+
+</html>

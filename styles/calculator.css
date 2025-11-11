@@ -6,6 +6,10 @@
   display: block;
 }
 
+.menu-buttons-div {
+  margin-top: 10px;
+}
+
 .number-buttons-div {
   display: grid;
   grid-template-columns: repeat(3, 80px);
