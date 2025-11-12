@@ -1,6 +1,7 @@
 html,
 body {
   margin: 0;
+  font-size: 24px;
 }
 
 * {
@@ -15,4 +16,113 @@ body {
   background: linear-gradient(to left, white, grey);
   margin: 0;
   padding: 1rem;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.menu>li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menubutton::after {
+  display: block;
+  background-color: rgb(77, 131, 178);
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  border-radius: 2px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(-45deg);
+}
+
+@media(max-width:768px) {
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #menu-toggle~.menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.320, 1);
+  }
+
+  #menu-toggle:checked~.menu li {
+    height: 2.5em;
+    border: 1px solid brown;
+    padding: 0.5em;
+    transition: height 600ms cubic-bezier(0.23, 1, 0.320, 1);
+  }
+
+  .menu>li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    background-color: rgb(151, 137, 48);
+    width: 100%;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .menu>li:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 0, 0.5)
+  }
 }

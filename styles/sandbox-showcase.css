@@ -1,7 +1,42 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-div {
+  border-bottom: 1px solid rgb(23, 28, 16);
+  margin: 10px;
+  padding-bottom: 10px;
+  width: 500px;
+}
+
+.title {
+  float: right;
+  width: 100px;
+  display: contents;
+  margin-bottom: 10px;
+}
+
+.field {
+  float: left;
+  width: 200px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.submit {
+  text-align: right;
+  border-bottom: none;
+}
+
+#register {
+  border-radius: 15px;
+}
+
 .sandboxButton1 {
   width: 100px;
   height: 100px;
 }
+
 
 .sandboxButton2 {
   padding: 20px;
@@ -21,6 +56,34 @@
 
 .sandbox-table {
   margin: 10px auto 10px auto;
+}
+
+.table-names {
+  /* border-collapse: collapse; */
+  border: 5px dotted black;
+  width: 600px;
+  background-color: rgb(126, 126, 192);
+}
+
+
+
+/* .table-names tr {
+   height: 50px;
+  border-top: 10px solid goldenrod;
+  border-bottom: 10px solid black;
+} */
+
+.table-names tr td {
+  border-top: 7px solid goldenrod;
+
+}
+
+.table-names tr:nth-child(odd) {
+  background-color: aqua;
+}
+
+.table-names tr:hover {
+  background-color: blueviolet;
 }
 
 /* overflow::scroll; 
