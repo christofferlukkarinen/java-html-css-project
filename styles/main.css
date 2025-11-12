@@ -14,6 +14,9 @@ li {
 }
 
 body {
+  margin: 0;
   background: url(../media/banner.gif) no-repeat;
-  background-size: 100% 300%;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }

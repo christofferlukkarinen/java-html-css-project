@@ -6,20 +6,28 @@ body {
   border-bottom: 1px solid rgb(23, 28, 16);
   margin: 10px;
   padding-bottom: 10px;
-  width: 500px;
+  width: 800px;
 }
 
 .title {
   float: right;
   width: 100px;
   display: contents;
-  margin-bottom: 10px;
+  border-right: 10px solid black;
 }
 
 .field {
   float: left;
   width: 200px;
   padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.title-label {
+  margin-left: 10px;
+}
+
+.form-name-div {
   margin-bottom: 10px;
 }
 

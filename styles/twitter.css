@@ -1,5 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
 
 body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
   font-family: Poppins;
+  background: #ecf0f3;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  text-align: center;
+  place-items: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 350px;
+  height: 500px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: lightgray;
+  box-shadow: 14px 14px 20px lightgreen, -14px -14px 20px lemonchiffon;
+  border-radius: 100px;
+}
+
+.brand-logo {
+  height: 100px;
+  width: 100px;
+  background: url("https://img.icons8.com/color/100/000000/twitter--v2.png");
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 50%;
+  box-shadow: 17px 17px 10px #602250b3, -22px -22px 10px steelblue;
+  /* box-shadow: -22px -22px 10px steelblue; */
+  /* -7px -7px -10px steelblue; */
+
+}
+
+.brand-title {
+  margin-top: 21px;
+  font-size: 1.8rem;
+  color: darkseagreen;
+  font-weight: 900;
+  letter-spacing: 21px;
+}
+
+.inputs {
+  margin-top: 20px;
+  text-align: left;
+
+}
+
+label,
+input,
+button {
+  display: block;
+  border: none;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  padding: 10px;
+  padding-left: 20px;
+  height: 45px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 12px 12px 12px gold, -12px -12px 12px darkorchid;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+label:nth-of-type(2) {
+  margin-top: 20px;
+}
+
+/* 
+denna selectar samma som ovan. child räknar med alla elemt
+så vår label är nr3 men den är nr2 av typen label
+label:nth-child(3) {
+  margin-top: 55px;
+} */
+
+input::placeholder {
+  color: green
+}
+
+button {
+  background: chocolate;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 20px;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 2px;
+  box-shadow: 8px 8px 12px darkred, -8px -8px 6px burlywood;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover {
+  box-shadow: none;
+
+}
+
+input {
+  caret-color: red;
 }
