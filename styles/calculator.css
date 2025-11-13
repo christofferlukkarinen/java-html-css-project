@@ -6,6 +6,11 @@
   display: block;
 }
 
+html {
+  overflow-x: hidden;
+  margin: 0;
+}
+
 .menu-buttons-div {
   margin-top: 10px;
 }
@@ -25,8 +30,6 @@
 }
 
 #button9 {
-  /*align-self: center;
-  justify-self: center;*/
   grid-area: k;
 }
 

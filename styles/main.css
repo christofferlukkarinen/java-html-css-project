@@ -1,3 +1,7 @@
+html {
+  overflow: hidden;
+}
+
 ul {
   width: 300px;
   margin: 0px auto 0px auto;
@@ -19,4 +23,5 @@ body {
   background-size: cover;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }

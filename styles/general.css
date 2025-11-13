@@ -22,6 +22,7 @@ a:hover {
 /* The <body> element has a default margin of 8px
      on all sides. This removes the default margins. */
 body {
+  margin: 0;
   font-family: Roboto, Arial;
   background-color: rgba(245, 234, 189, 0.333);
 

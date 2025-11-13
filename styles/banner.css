@@ -10,6 +10,7 @@ banner size is fixed and does not resize with window size
 #banner-div {
   top: 5;
   min-height: 120px;
+  overflow: hidden;
 }
 
 .home-image {
@@ -21,4 +22,5 @@ banner size is fixed and does not resize with window size
 .banner-image {
   min-width: 100%;
   min-height: 120px;
+  overflow: hidden;
 }
