@@ -2,44 +2,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.form-div {
-  border-bottom: 1px solid rgb(23, 28, 16);
-  margin: 10px;
-  padding-bottom: 10px;
-  width: 800px;
-}
-
-.title {
-  float: right;
-  width: 100px;
-  display: contents;
-  border-right: 10px solid black;
-}
-
-.field {
-  float: left;
-  width: 200px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-}
-
-.title-label {
-  margin-left: 10px;
-}
-
-.form-name-div {
-  margin-bottom: 10px;
-}
-
-.submit {
-  text-align: right;
-  border-bottom: none;
-}
-
-#register {
-  border-radius: 15px;
-}
-
 .sandboxButton1 {
   width: 100px;
   height: 100px;
@@ -58,12 +20,8 @@ body {
   margin: 20px;
 }
 
-#sandbox-main-div {
-  text-align: center;
-}
-
 .sandbox-table {
-  margin: 10px auto 10px auto;
+  margin: 10px;
 }
 
 .table-names {

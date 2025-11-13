@@ -90,9 +90,43 @@ This page is written mostly in pure html for practice
 
     </table>
     <br><br>
-    <button style="
+
+    <div class="form-div">
+      <form class="form-class" action="#" method="post">
+
+        <div class="form-name-div">
+          <label for="name" class="name-label">name</label>
+          <input type="text" class="name-field" id="name">
+
+        </div>
+        <div>
+          <label for="email" class="email-label">email</label>
+          <input type="email" class="email-field" id="email" style="
+          margin-top: 10px;">
+
+        </div>
+        <div class="gender-div">
+          <br>
+          <span class="gender">Gender:</span>
+          <input type="radio" name="gender" id="male" value="m">
+          <label for="male">M</label>
+
+          <input type="radio" name="gender" id="female" value="f">
+          <label for="female">F</label>
+
+          <input type="radio" name="gender" id="none" value="none">
+          <label for="none">Other</label>
+
+        </div>
+        <br>
+        <button style="
     padding: 10px 30px;
-    ">Send</button>
+    ">Send Feedback</button>
+
+      </form>
+    </div>
+    <br>
+
   </center>
 
 

@@ -1,6 +1,3 @@
-/*home-link exists as id in all subpages, the order matters here, if 'hover' is placed first,
-'visited' overwrites and hover won't show*/
-
 a:visited {
   color: rgb(255, 0, 204)
 }

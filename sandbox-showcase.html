@@ -15,67 +15,70 @@
 
 <body>
   <div id="banner-div"></div>
-
-  <table class="sandbox-table">
-    <caption>This is the table caption</caption>
-    <tr>
-      <th>Feature</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <td><i>i element</i></td>
-      <td>italic text</td>
-    </tr>
-    <tr>
-      <td><b>b element</b></td>
-      <td>bold text</td>
-    </tr>
-    <tr>
-      <td><abbr title="specify this text in title=">abbr element</abbr></td>
-      <td>Shows popup info on mouse hover</td>
-    </tr>
-    <tr>
-      <td>
-        <audio controls>
-          <source src="media/Mixdown.wav" type="audio/wav">
-          Your browser does not support the audio tag.
-        </audio>
-      </td>
-      <td>Audio controls, embeds audio file</td>
-    </tr>
-    <tr>
-      <td>
-        <blockquote>Blockquote</blockquote>
-      </td>
-      <td>indents text</td>
-    </tr>
-    <tr>
-      <td>
-        <input list="dataList1" name="dataListInput" id="dataListInput" />
-        <datalist class="sandboxDataList" id="dataList1">
-          <option value="Option 1"></option>
-          <option value="Option 2"></option>
-          <option value="Option 3"></option>
-        </datalist>
-      </td>
-      <td>input list with datalist</td>
-    </tr>
-    <tr>
-      <td>
-        <details>
-          <summary>Details element</summary>
-          This text is hidden until clicked
-        </details>
-      </td>
-      <td>creates expandable description</td>
-    </tr>
-  </table>
+  <div class="sandbox-table-div">
+    <table class="sandbox-table">
+      <caption>This is the table caption</caption>
+      <tr>
+        <th>Feature</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><i>i element</i></td>
+        <td>italic text</td>
+      </tr>
+      <tr>
+        <td><b>b element</b></td>
+        <td>bold text</td>
+      </tr>
+      <tr>
+        <td><abbr title="specify this text in title=">abbr element</abbr></td>
+        <td>Shows popup info on mouse hover</td>
+      </tr>
+      <tr>
+        <td>
+          <audio controls>
+            <source src="media/Mixdown.wav" type="audio/wav">
+            Your browser does not support the audio tag.
+          </audio>
+        </td>
+        <td>Audio controls, embeds audio file</td>
+      </tr>
+      <tr>
+        <td>
+          <blockquote>Blockquote</blockquote>
+        </td>
+        <td>indents text</td>
+      </tr>
+      <tr>
+        <td>
+          <input list="dataList1" name="dataListInput" id="dataListInput" />
+          <datalist class="sandboxDataList" id="dataList1">
+            <option value="Option 1"></option>
+            <option value="Option 2"></option>
+            <option value="Option 3"></option>
+          </datalist>
+        </td>
+        <td>input list with datalist</td>
+      </tr>
+      <tr>
+        <td>
+          <details>
+            <summary>Details element</summary>
+            This text is hidden until clicked
+          </details>
+        </td>
+        <td>creates expandable description</td>
+      </tr>
+    </table>
+  </div>
   <br>
   <div class="sandboxDiv1">
     This is a div. By default, browsers always place a line break before and after the &lt;div&gt; element. <br>
-    Anything can be put into a div. Div is used to create sections that can be styled with CSS or manipulated with
-    JavaScript. <span class="sandboxSpan1"> This text is surrounded by a span element, which can be targeted in css or
-      java. </span>
+    Anything can be put into a div. Div is used to create sections that can be styled with CSS<br> or manipulated with
+    JavaScript.
+    <span class="sandboxSpan1"> This text is surrounded by a span element, which can be targeted in css or
+      java.
+    </span>
   </div>
   <br><br>
   <div class="buttonsDiv">
@@ -106,37 +109,7 @@
     </tr>
   </table>
   <br>
-  <div class="form-div">
-    <form class="form-class" action="#" method="post">
 
-      <div class="form-name-div">
-        <label for="name" class="title-label">name</label>
-        <input type="text" class="field" name="name" id="name">
-
-      </div>
-      <div>
-        <label for="email" class="title">email</label>
-        <input type="email" class="field" name="name" id="email">
-
-      </div>
-      <div>
-        <br>
-        <span class="gender">Gender:</span>
-        <input type="radio" name="gender" id="male" value="m">
-        <label for="male">M</label>
-
-        <input type="radio" name="gender" id="female" value="f">
-        <label for="female">F</label>
-
-        <input type="radio" name="gender" id="none" value="none">
-        <label for="none">Vill ej</label>
-
-      </div>
-      <div class="submit">
-        <input type="submit" value="Register" id="register">
-      </div>
-    </form>
-  </div>
 
   <!--SECTION*************************************************************************************-->
   <section></section>
