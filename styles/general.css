@@ -1,3 +1,7 @@
+/*
+Fallback color added
+*/
+
 a:visited {
   color: rgb(255, 0, 204)
 }
@@ -21,6 +25,7 @@ a:hover {
 body {
   margin: 0;
   font-family: Roboto, Arial;
+  background-color: lightyellow;
   background-color: rgba(245, 234, 189, 0.333);
 
 }

@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--
+Lite random saker som krävs för uppgiften... Video, tabell, API. Jag tror API:n fungerar korrekt men är inte helt säker eftersom jag inte
+vill regga kreditkort så jag kan inte testa ordentligt.
+jag har använt 2 metoder: den första  använder ett custom element gmp-map via ett script. scriptet fungerar inte utan API key så detta element
+laddas nog inte korrekt och visar bara fel...
+metod 2 laddar allt i ett iframe element, och verkar fungera förutom att API key är inkorrekt.
+
+-->
+
 <head>
-  <!--help säger använd inte meta charset och name tillsammans-->
+  <!--help säger använd inte meta charset och name tillsammans?-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" author="Christoffer Lukkarinen"
     description="HTML projektuppgift sandbox-showcase">
@@ -11,6 +20,8 @@
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/sandbox-showcase.css">
   <link rel="stylesheet" href="styles/banner.css">
+  <script type="module" src="./index.js"></script>
+
 </head>
 
 <body>
@@ -114,6 +125,32 @@
   <!--SECTION*************************************************************************************-->
   <section></section>
   <script src="scripts/banner.js"></script>
+
+  <!--första google maps. laddar api från script i slutet av body-->
+  <gmp-map center="37.4220656,-122.0840897" zoom="10" map-id="DEMO_MAP_ID" style="height: 500px"></gmp-map>
+
+  <br>
+  <div>Video taken from free example site</div>
+
+  <video controls src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+    poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217" width="320">
+    Sorry, your browser doesn't support embedded videos, but don't worry, you can
+    <a href="https://archive.org/details/BigBuckBunny_124">download it</a>
+    and watch it with your favorite video player!
+  </video>
+  <br><br>
+
+  <!--Andra google maps, laddar allt i detta element-->
+  <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=API_KEY
+    &q=Space+Needle,Seattle+WA">
+  </iframe>
+
+  <!--script för API för första google map elementet gm-map-->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6myHzS10YXdcazAFalmXvDkrYCp5cLc8&libraries=maps,marker&v=weekly"
+    defer></script>
+
 </body>
 
 </html>

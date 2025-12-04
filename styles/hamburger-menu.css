@@ -38,7 +38,7 @@ body {
 }
 
 a {
-  color: aquamarine;
+  color: rgb(56, 120, 98);
   text-decoration: none;
 }
 
@@ -87,7 +87,7 @@ a {
 }
 
 #menu-toggle:checked+.menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255);
 }
 
 #menu-toggle:checked+.menu-button-container .menu-button::after {

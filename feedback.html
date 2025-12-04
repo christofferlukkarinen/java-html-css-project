@@ -3,6 +3,8 @@
 
 <!--
 This page is written mostly in pure html for practice
+changed action=get on form to prevent site crashing when clicking. probably is incorrect for a real form submit but works
+better in this "form simulation"
 -->
 
 <head>
@@ -92,8 +94,8 @@ This page is written mostly in pure html for practice
     <br><br>
 
     <div class="form-div">
-      <form class="form-class" action="#" method="post">
-
+      <form class="form-class" action="" method="get">
+        <h3>Provide contact details and document</h3>
         <div class="form-name-div">
           <label for="name" class="name-label">name</label>
           <input type="text" class="name-field" id="name">
@@ -119,6 +121,7 @@ This page is written mostly in pure html for practice
 
         </div>
         <br>
+        <input type="file" id="file-upload" name="filename">
         <button style="
     padding: 10px 30px;
     ">Send Feedback</button>
